@@ -3,15 +3,13 @@ import { TextField, Button, Alert } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router-dom";
-import { NavigateFunction} from "@remix-run/router/utils";
-
 type FormData = {
   name: string;
   phone: number;
   email: string;
 };
 const Home: React.FC = () => {
-  const navigate: NavigateFunction = useNavigate();
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
